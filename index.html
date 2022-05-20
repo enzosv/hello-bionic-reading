@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="w-100 h-100 p-5" style="background-color: #191911">
+      <form class="form-inline text-light">
+        <input
+          type="text"
+          class="form-control mb-2 mr-sm-2"
+          id="api_key"
+          placeholder="API Key"
+        />
+        <!-- TODO: fixation, saccade sliders -->
+        <button
+          id="convert"
+          type="button"
+          class="btn btn-primary mb-2"
+          onclick="main(document.getElementById('content').value, document.getElementById('api_key').value)"
+        >
+          Convert
+        </button>
+        <p>
+          &nbspLearn more at
+          <a href="https://bionic-reading.com/">Bionic Reading</a>
+        </p>
+      </form>
+      <div class="row h-75 w-100">
+        <div class="col h-100">
+          <textarea class="p-2 w-100 h-100 bg-dark text-light" id="content">
+Bionic Reading is a new method facilitating the reading process by guiding the eyes through text with artificial fixation points. As a result, the reader is only focusing on the highlighted initial letters and lets the brain center complete the word. In a digital world dominated by shallow forms of reading, Bionic Reading aims to encourage a more in-depth reading and understanding of written content.</textarea
+          >
+        </div>
+        <div class="col text-light bg-dark" id="response">
+          <div
+            class="bionic-reader bionic-reader-3c1697c6-0f63-f836-f6c9-c50620045904 origin"
+            style=""
+          >
+            <div class="bionic-reader-content">
+              <div class="bionic-reader-container">
+                <style>
+                  .bionic.b {
+                    opacity: ;
+                  }
+                </style>
+
+                <b class="b bionic">Bion</b>ic <b class="b bionic">Readi</b>ng
+                <b class="b bionic">i</b>s a <b class="b bionic">ne</b>w
+                <b class="b bionic">meth</b>od
+                <b class="b bionic">facilitati</b>ng <b class="b bionic">th</b>e
+                <b class="b bionic">readi</b>ng <b class="b bionic">proce</b>ss
+                <b class="b bionic">b</b>y <b class="b bionic">guidi</b>ng
+                <b class="b bionic">th</b>e <b class="b bionic">eye</b>s
+                <b class="b bionic">throu</b>gh <b class="b bionic">tex</b>t
+                <b class="b bionic">wit</b>h <b class="b bionic">artifici</b>al
+                <b class="b bionic">fixati</b>on <b class="b bionic">poin</b>ts.
+                <b class="b bionic">A</b>s a <b class="b bionic">resu</b>lt,
+                <b class="b bionic">th</b>e <b class="b bionic">read</b>er
+                <b class="b bionic">i</b>s <b class="b bionic">onl</b>y
+                <b class="b bionic">focusi</b>ng <b class="b bionic">o</b>n
+                <b class="b bionic">th</b>e <b class="b bionic">highlight</b>ed
+                <b class="b bionic">initi</b>al <b class="b bionic">lette</b>rs
+                <b class="b bionic">an</b>d <b class="b bionic">let</b>s
+                <b class="b bionic">th</b>e <b class="b bionic">bra</b>in
+                <b class="b bionic">cent</b>er <b class="b bionic">comple</b>te
+                <b class="b bionic">th</b>e <b class="b bionic">wor</b>d.
+                <b class="b bionic">I</b>n a <b class="b bionic">digit</b>al
+                <b class="b bionic">wor</b>ld <b class="b bionic">dominat</b>ed
+                <b class="b bionic">b</b>y <b class="b bionic">shall</b>ow
+                <b class="b bionic">for</b>ms <b class="b bionic">o</b>f
+                <b class="b bionic">readi</b>ng, <b class="b bionic">Bion</b>ic
+                <b class="b bionic">Readi</b>ng <b class="b bionic">aim</b>s
+                <b class="b bionic">t</b>o <b class="b bionic">encoura</b>ge a
+                <b class="b bionic">mor</b>e <b class="b bionic">i</b>n-<b
+                  class="b bionic"
+                  >dep</b
+                >th <b class="b bionic">readi</b>ng <b class="b bionic">an</b>d
+                <b class="b bionic">understand</b>ing <b class="b bionic">o</b>f
+                <b class="b bionic">writt</b>en <b class="b bionic">conte</b>nt.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
