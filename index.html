@@ -6,9 +6,26 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
+    />
+    <style>
+      .github-fork-ribbon:before {
+        background-color: #333;
+      }
+    </style>
   </head>
-  <body>
-    <div class="w-100 h-100 p-5" style="background-color: #191911">
+  <body style="background-color: #191911">
+    <a
+      class="github-fork-ribbon"
+      href="https://github.com/enzosv/hello-bionic-reading/tree/main"
+      data-ribbon="Fork me on GitHub"
+      title="Fork me on GitHub"
+      >Fork me on GitHub</a
+    >
+
+    <div class="w-100 h-100 p-5">
       <form class="form-inline text-light">
         <input
           type="text"
@@ -30,6 +47,7 @@
           <a href="https://bionic-reading.com/">Bionic Reading</a>
         </p>
       </form>
+      <!-- TODO: font size buttons -->
       <div class="row h-75 w-100">
         <div class="col h-100">
           <textarea class="p-2 w-100 h-100 bg-dark text-light" id="content">
