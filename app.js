@@ -4,11 +4,14 @@ async function main(content, key) {
   if (content.length < 1) {
     return;
   }
-  document.getElementById("convert").disabled = true;
+  const button = document.getElementById("convert");
+  button.disabled = true;
   const encodedParams = new URLSearchParams();
   encodedParams.append("content", content);
   encodedParams.append("response_type", "html");
   encodedParams.append("request_type", "html");
+
+  // TODO: Adjust based on view size
   encodedParams.append("fixation", "1");
   encodedParams.append("saccade", "10");
 
@@ -26,9 +29,10 @@ async function main(content, key) {
     "https://bionic-reading1.p.rapidapi.com/convert",
     options
   );
-  document.getElementById("convert").disabled = false;
+  button.disabled = false;
   document.getElementById("response").innerHTML = await response.text();
 }
 
 document.getElementById("api_key").value = localStorage.getItem("key");
 
+// TODO: Auto resize font to fit
