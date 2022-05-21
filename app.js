@@ -1,5 +1,6 @@
 async function main(content, key) {
-  //TODO: Remember key
+  localStorage.setItem("key", key);
+
   if (content.length < 1) {
     return;
   }
@@ -28,3 +29,6 @@ async function main(content, key) {
   document.getElementById("convert").disabled = false;
   document.getElementById("response").innerHTML = await response.text();
 }
+
+document.getElementById("api_key").value = localStorage.getItem("key");
+
